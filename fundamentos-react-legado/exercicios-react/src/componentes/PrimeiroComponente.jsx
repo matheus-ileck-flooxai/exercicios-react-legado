@@ -1,6 +1,4 @@
 import React from "react";
 
 
-export default props => {
-   return <h1>Primeiro Componente!</h1>
-}
+export default props =>  <h1>Primeiro Componente!</h1>
