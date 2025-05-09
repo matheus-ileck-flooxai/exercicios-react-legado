@@ -1,5 +1,6 @@
 import React from "react";
 
 export default props => {
-    return <h1>{props.saudacao}</h1>
+
+    return <h1>{props.nome} {props.sobrenome}</h1>
 }

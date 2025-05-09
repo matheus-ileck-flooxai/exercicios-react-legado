@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom"
-import Component from "./component";
+import Familia from "./Familia";
+import Filho from "./filho";
 
 ReactDOM.render(
-    <Component saudacao='Ola React' />,
+    <Familia sobrenome='Ileck'/>
+    ,
     document.getElementById('app'))
