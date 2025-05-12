@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { changeValue } from "./fieldActions"; //Liga as açoes criadas com os dispatchers
 
 class Field extends Component {
 
@@ -8,7 +10,7 @@ class Field extends Component {
         return (
             <div>
                 <label>{this.props.value}</label>
-                <input onChange={this.handleChange} value={this.props.value}></input>
+                <input onChange={this.props.changeValue} value={this.props.value}></input>
             </div>
         )
     }
@@ -19,4 +21,7 @@ function mapStateToProps(state) {
         value: state.field.value
     }
 }
-export default connect(mapStateToProps)(Field)
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({changeValue}, dispatch)
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Field)
