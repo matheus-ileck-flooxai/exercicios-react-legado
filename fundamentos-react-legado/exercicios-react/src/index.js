@@ -1,8 +1,9 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-import Pai from './componentes/Pai'
+
+import ComponenteClasse from './componentes/ComponenteClasse'
 const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
-        <Pai/>
+        <ComponenteClasse valor="Sou um componente de Classe"/>
     </div>, elemento)
