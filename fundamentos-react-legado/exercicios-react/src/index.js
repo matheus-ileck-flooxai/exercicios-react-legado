@@ -1,9 +1,8 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-
-import ComponenteClasse from './componentes/ComponenteClasse'
+import Contador from './componentes/Contador'
 const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
-        <ComponenteClasse valor="Sou um componente de Classe"/>
+        <Contador numeroInicial={10}/>
     </div>, elemento)
