@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { changeValue } from "./fieldActions"; //Liga as açoes criadas com os dispatchers
+import { changeValue } from "./fieldActions"; 
 
 class Field extends Component {
 
